@@ -44,7 +44,7 @@ resultButton.addEventListener("click", function () {
   gameOver = true;
   // HIDE the Question Container and SHOW (display) the 'resultDisplay' container
   questionContainerElement.style.display = "none";
-  resultDisplay.style.display = "block";
+  //resultDisplay.style.display = "block";
   // Capture Current Score
   playerScore.textContent = mark;
   // Capture the USER Initials
@@ -82,25 +82,22 @@ submitButton.addEventListener("click", function () {
 
   localStorage.setItem("highScores", JSON.stringify(localHighScores));
   showHighScores();
-  // now that it's set in local storage,
-  // how do I append it to the page
-  // look at local storage activities
-  // find one where we create an element
-  // and add it to the page (might need to
-  // use a loop to go through scores);
-});
+ });
 
 function showHighScores() {
   var localHighScores = JSON.parse(localStorage.getItem("highScores"));
 
   localHighScores.forEach((highScore) => {
     // create a list item
+    resultDisplay.className = 'hide'
+    var rankEl = document.getElementById('rank')
     var displayBest = document.createElement('li');
     // set the text to your score and playername
     displayBest.textContent = highScore.score + " | " + highScore.playerName;
     // append it somewhere on your html
-    var scoreScreen = document.getElementById("scoreList")
-    scoreScreen.appendChild(displayBest);
+   // var scoreScreen = document.getElementById("scoreList")
+   rankEl.append(displayBest);
+    //scoreScreen.appendChild(displayBest);
   })
 }
 

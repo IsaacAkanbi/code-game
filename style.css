@@ -62,9 +62,14 @@ body {
   display: none;
 }
 .resultDisplay{
-  display: none;
+  display: block;
 }
 
 .result-btn{
   display:none;
+}
+#scoreList {
+  display: block;
+  width: 300px;
+  border: 3px solid black;
 }
