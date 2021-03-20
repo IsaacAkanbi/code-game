@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Code Quiz</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./style.css">
+</head>
+    <body>
+        <header>
+            <div class="Intro-to-quiz">Welcome to the Quiz Game</div>
+            <p>Attempt the following coding related questions to test your knowledge of programming. Kindly note that you will be penalized for incorrect attempt and also time deduction</p>
+            </p>
+            <button id="start-btn" class="start-btn btn">Start the game</button>
+            <div> <p> Time: <span id="timeLeft"> 0 </span> </p> </div>
+        </header>
+        
+        
+        <div class="container">
+            
+         <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>               
+            </div>
+           <div class="controls">
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div>
+            <button id="result" class="result-btn">result</button>   
+      </div>    
+
+    <div id="resultDisplay" class="resultDisplay">
+        <h3 id="userScore"></h3>
+        <label>Enter your player ID</label>
+        <input type="text" id="playerId" maxlength="4" />
+        <button id="submit" class="submit">Submit Score</button>
+    </div>
+        <script src="./script.js"></script>
+      </body>
+
+
+</html>
+
+
