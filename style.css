@@ -5,11 +5,12 @@
 }
 
 header {
-  width: 800px;
-  max-width: 50%;
-  background-color: darkgray;
+  width: 1000px;
+  height: 100vh;
+  max-width: 40%;
+  background-color: rgb(12, 224, 108);
   border-radius: 5px;
-  padding: 10px;
+  padding: 50px;
   box-shadow: 0 0 10px 2px;
   display: flex;
   flex-wrap: wrap;
@@ -24,7 +25,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: chartreuse;
+  background-color: rgb(0, 255, 213);
 }
 
 .container{
@@ -54,6 +55,7 @@ body {
 
 .controls {
   display: flex;
+  width:fit-content;
   justify-content: center;
   align-items: center;
 }
